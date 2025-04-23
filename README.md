@@ -1,16 +1,19 @@
 # UrusaiYatu-Library
 うるさいやつのライブラリです。非同期処理です。
 
+インストール方法
+```
+pip install git+https://github.com/mochagod123/UrusaiYatu-Library.git
+```
+
 サンプルコード
 ```
-import urusaiyatu as main
+from urusaiyatu import urusaiyatu as main
 import asyncio
 
 async def run():
     user = await main.User().fetch()
-    user_one = await main.User().fetch(ユーザーid)
     print(user)
-    print(user_one)
     item = await main.Item().fetch()
     print(item)
     recipe = await main.Recipe().fetch()
