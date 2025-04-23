@@ -3,7 +3,7 @@
 
 サンプルコード
 ```
-import urusai as main
+import urusaiyatu as main
 import asyncio
 
 async def run():
