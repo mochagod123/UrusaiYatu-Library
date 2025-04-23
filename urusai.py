@@ -34,7 +34,7 @@ class Recipe():
                     async with session.get(f"{baseurl}/recipe") as response:
                         return await response.json()
                 if not recipe:
-                    async with session.get(f"{baseurl}/recipe/{itemname}") as response:
+                    async with session.get(f"{baseurl}/recipe/{itemname}?t=r") as response:
                         return await response.json()
                 if not itemname:
                     async with session.get(f"{baseurl}/recipe/{recipe}") as response:
